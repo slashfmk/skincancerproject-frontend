@@ -9,7 +9,7 @@ import Footer from './Footer';
         <>
             <Header />
             <Main />
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
  }

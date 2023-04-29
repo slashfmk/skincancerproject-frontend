@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { motion, easeInOut } from 'framer-motion';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+
 
 import LineProgress from './LineProgress';
 import Panel from './Panel';
@@ -58,10 +61,16 @@ function Main() {
     return (
         <section className={`w-full  m-auto p-5 flex flex-col`}>
             <div className={`text-center mt-8 w-auto md:w-[800px] self-center content-center items-center`}>
+           
+           
 
-                <h1 className={`text-slate-500 font-semibold text-2xl`}>Cancer image classifier</h1>
-
-                <Panel title={`Image upload`}>
+                <h1 className={`text-slate-500 font-semibold text-2xl`}>Cancer Image Classifier</h1>
+                <p> 1. Click "Choose File" and select the image from your local computer</p>
+                <p> 2. After selecting the image, click "Upload Image" Button</p>
+                <p> 3. After uploading the image, the model will run a prediction on it and output results</p>
+                <p> 4. Each percentage has model confidence with image belonging to that class.</p>
+                
+                <Panel title={`Image Upload`}>
                     <p>Please browse your computer for an image</p>
 
                     <div className={`m-4`}>
